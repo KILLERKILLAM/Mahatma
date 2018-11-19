@@ -1,2 +1,2 @@
 # Mahatma
-Various Operations in which Mahatma Gandhi involved
+Various Operations in India in which Mahatma Gandhi involved.
