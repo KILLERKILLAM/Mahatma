@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -604,7 +604,7 @@ GameObject:
   - component: {fileID: 328933914}
   - component: {fileID: 328933915}
   m_Layer: 0
-  m_Name: 220px-Salt_March
+  m_Name: Image3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1516,6 +1516,7 @@ GameObject:
   m_Component:
   - component: {fileID: 987776577}
   - component: {fileID: 987776578}
+  - component: {fileID: 987776579}
   m_Layer: 0
   m_Name: Life
   m_TagString: Untagged
@@ -1573,6 +1574,26 @@ VideoPlayer:
   m_Looping: 0
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
+--- !u!114 &987776579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 987776576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85d566a3298822e4f8015accc919752e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Image1: {fileID: 1646632671}
+  Image2: {fileID: 1217800333}
+  Image3: {fileID: 328933912}
+  Gandhi:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &1006629439
 GameObject:
   m_ObjectHideFlags: 0
@@ -2180,7 +2201,7 @@ GameObject:
   - component: {fileID: 1217800334}
   - component: {fileID: 1217800335}
   m_Layer: 0
-  m_Name: 220px-Salt_March
+  m_Name: Image2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2445,7 +2466,7 @@ TextMesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1339359415}
-  m_Text: Hello World
+  m_Text: gdhfgjk
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
@@ -2867,7 +2888,7 @@ GameObject:
   - component: {fileID: 1646632672}
   - component: {fileID: 1646632673}
   m_Layer: 0
-  m_Name: 220px-Salt_March
+  m_Name: Image1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
