@@ -15,6 +15,7 @@ public class Controller : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        SoundManager.Instance.PlayMusic(SoundManager.Instance.GameSounds[0]);
         IntroScene.gameObject.SetActive(true);
         LifeScene.gameObject.SetActive(false);
         Monuments.gameObject.SetActive(false);
