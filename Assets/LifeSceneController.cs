@@ -26,6 +26,9 @@ public class LifeSceneController : MonoBehaviour {
         Image1.gameObject.GetComponent<SpriteRenderer>().sprite = Gandhi[index];
         Image2.gameObject.GetComponent<SpriteRenderer>().sprite = Gandhi[index + 1];
         Image3.gameObject.GetComponent<SpriteRenderer>().sprite = Gandhi[index + 2];
+        Text1.gameObject.GetComponent<TextMesh>().text = Info[index];
+        Text2.gameObject.GetComponent<TextMesh>().text = Info[index+1];
+        Text3.gameObject.GetComponent<TextMesh>().text = Info[index+2];
     }
 	
 	// Update is called once per frame
@@ -41,14 +44,26 @@ public class LifeSceneController : MonoBehaviour {
         Image1.gameObject.GetComponent<SpriteRenderer>().sprite = Gandhi[index];
         Image2.gameObject.GetComponent<SpriteRenderer>().sprite = Gandhi[index + 1];
         Image3.gameObject.GetComponent<SpriteRenderer>().sprite = Gandhi[index + 2];
+        Text1.gameObject.GetComponent<TextMesh>().text = Info[index];
+        Text2.gameObject.GetComponent<TextMesh>().text = Info[index + 1];
+        Text3.gameObject.GetComponent<TextMesh>().text = Info[index + 2];
 
-        if(index==0)
+
+        if (index == 0)
         {
             PreviousButton.SetActive(false);
         }
-        if(index+3==Gandhi.Count)
+        else
+        {
+            PreviousButton.SetActive(true);
+        }
+        if (index + 3 == Gandhi.Count)
         {
             NextButton.SetActive(false);
+        }
+        else
+        {
+            NextButton.SetActive(true);
         }
     }
 
@@ -59,6 +74,9 @@ public class LifeSceneController : MonoBehaviour {
         Image1.gameObject.GetComponent<SpriteRenderer>().sprite = Gandhi[index];
         Image2.gameObject.GetComponent<SpriteRenderer>().sprite = Gandhi[index + 1];
         Image3.gameObject.GetComponent<SpriteRenderer>().sprite = Gandhi[index + 2];
+        Text1.gameObject.GetComponent<TextMesh>().text = Info[index];
+        Text2.gameObject.GetComponent<TextMesh>().text = Info[index + 1];
+        Text3.gameObject.GetComponent<TextMesh>().text = Info[index + 2];
 
         if (index == 0)
         {
