@@ -10,8 +10,8 @@ public class LifeSceneController : MonoBehaviour {
     public List<Sprite> Gandhi;
     public List<string> Info;
 
-    public Button NextButton;
-    public Button PreviousButton;
+    public GameObject NextButton;
+    public GameObject PreviousButton;
 
 
     public int index = 0;
@@ -19,7 +19,8 @@ public class LifeSceneController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-        PreviousButton.enabled = false;
+        PreviousButton.SetActive(false);
+        NextButton.SetActive(true);
         index = 0;
 
         Image1.gameObject.GetComponent<SpriteRenderer>().sprite = Gandhi[index];
@@ -43,11 +44,11 @@ public class LifeSceneController : MonoBehaviour {
 
         if(index==0)
         {
-            PreviousButton.enabled = false;
+            PreviousButton.SetActive(false);
         }
         if(index+3==Gandhi.Count)
         {
-            NextButton.enabled = false;
+            NextButton.SetActive(false);
         }
     }
 
@@ -61,11 +62,19 @@ public class LifeSceneController : MonoBehaviour {
 
         if (index == 0)
         {
-            PreviousButton.enabled = false;
+            PreviousButton.SetActive(false);
+        }
+        else
+        {
+            PreviousButton.SetActive(true);
         }
         if (index + 3 == Gandhi.Count)
         {
-            NextButton.enabled = false;
+            NextButton.SetActive(false);
+        }
+        else
+        {
+            NextButton.SetActive(true);
         }
     }
 }
