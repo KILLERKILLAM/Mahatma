@@ -7,7 +7,7 @@ public class Controller : MonoBehaviour {
     public GameObject IntroScene;
     public GameObject LifeScene;
     public GameObject Monuments;
-
+    
 
     public GameObject IntroPanel;
     public GameObject LifePanel;
